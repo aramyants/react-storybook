@@ -6,7 +6,7 @@ import { withThemeByClassName } from '@storybook/addon-themes';
 
 const preview = {
   parameters: {
-    actions: { argTypesRegex: '^on.*' },
+    // actions: { argTypesRegex: '^on.*' },
 
     controls: {
       matchers: {
@@ -28,7 +28,8 @@ const preview = {
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
       test: 'todo'
-    }
+    },
+
   },
 
   decorators: [
@@ -42,6 +43,8 @@ const preview = {
       themes: { light: '', dark: 'dark' },
     }),
   ],
+
+  tags: ['autodocs'],
 };
 
 export default preview;
